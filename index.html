@@ -34,7 +34,7 @@
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
-        <li><a href="#About">About</a></li>
+        <li><a href="#About">About Me</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>                 
@@ -45,9 +45,9 @@
         <div id="content"> 
           
           <div id="About" class="content-region hide">
-            <h2>About Me</h2>
+            <h2>Hello!</h2>
             <p>
-              Hi, I'm Jen, a game dev with a passion for the various aspects behind the development of games. I have over 2 years in Unity development projects, 
+              Hi, I'm Jen, a game dev with a passion for the various aspects behind the development of games. I have over 2 years in Unity <a href="#Portfolio">development projects</a>, 
               where I combine my technical skills and creative thinking. Using these skills, I strive to create games that make for a fun and challenging experience. 
               I wish to refresh the ability to learn when I create for people that enjoy a tight gameplay experience.
             </p>
@@ -63,10 +63,33 @@
           <div id="Contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
+              Feel free to contact me on my socials or here about any opportunity, or even just to chat.<br><br>
             </p>
+
+            <div class="two-col">
+              <div class="col1">
+                <ul style="list-style-type:none;">
+                  <li><i class="uil uil-envelope"></i> <a href="mailto:jenchen1177@yahoo.ca" target="_blank" class="footer__social">jenchen1177@yahoo.ca</a></li>
+                  <li><i class="uil uil-linkedin"></i> <a href="https://www.linkedin.com/in/jenchen-/" target="_blank" class="footer__social">www.linkedin.com/in/jenchen-/</a></li>
+                  <li><i class="uil uil-github"></i> <a href="https://github.com/jenchen7/" target="_blank" class="footer__social">github.com/jenchen7/</a></li>
+                </ul> 
+              </div>
+              
+              <div class="col2">
+                <form action="mailto:jenchen1177@yahoo.ca" method="post" enctype="text/plain">
+                  <div class="grid">
+                    
+                    <div><p class="rcorners1">Name:<br><input type="text" id="fname" name="Name"/></p></div>
+                    <div><p class="rcorners1">Email:<br><input type="text" id="email" name="Email"/></p></div>
+                    <div><p class="rcorners1">Message:<br><textarea name="Message" id="message" cols="50"></textarea></p></div>
+                    <div>
+                      <br><input type="submit" value="Send" class="rcorners2"/>
+                    </div>
+                  </div>
+                </form>
           </div>
-          
+
+          </div>
         </div>
       </div>
     </div>

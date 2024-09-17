@@ -22,12 +22,13 @@ a {
   text-decoration: none; 
   color:#EF6D3D;
 }
+/*
 a:focus {
   outline: thin dotted;
-}
+}*/
 
 a:hover {
-  color: #ffb89f;
+  color: #FFB89F;
 }
 
 small {
@@ -106,7 +107,7 @@ body {
 }
 header, #content, footer { 
   background: rgba(0,0,0,.8); 
-  padding:30px;
+  padding:40px;
   color:#FFFFFF; 
 }
 
@@ -145,3 +146,68 @@ ul.main-menu li a.active {
 .grid-container {
   row-gap: 50px;
 }
+
+/* Text form */
+.two-col {
+  overflow: hidden;/* Makes this div contain its floats */
+}
+
+.two-col .col1,
+.two-col .col2 {
+  width: 49%;
+}
+
+.two-col .col1 {
+  float: left;
+}
+
+.two-col .col2 {
+  float: right;
+}
+
+.two-col label {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+input, input-focus, 
+textarea, textarea-focus {
+  border: none;
+  outline: none;
+  background-color: rgba(66, 66, 66, 0);
+  color: #FFFFFF;
+}
+
+.grid { 
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  }
+.grid > div {
+  padding-right: 10em;
+}
+
+.rcorners1 {
+  border-radius: 10px;
+  background-color: rgba(66, 66, 66, 0.6);
+  padding: 10px; 
+  color: #ffb89f;
+  margin: 0;
+}
+
+.rcorners2 {
+  border-radius: 10px;
+  background: #EF6D3D;
+  padding: 10px; 
+  color:#FFFFFF;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.rcorners2:hover {
+  background-color: #FFB89F;
+}
+
