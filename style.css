@@ -62,6 +62,7 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
+  font-size: 1.05em;
 }
 p + p {
 
@@ -181,15 +182,49 @@ textarea, textarea-focus {
   color: #FFFFFF;
 }
 
+/**
+Grid
+*/
 .grid { 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  }
+}
+
 .grid > div {
   padding-right: 10em;
 }
 
+.grid-games {
+  display: flex;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .7em;
+  row-gap: 1em;
+}
+
+.grid-game {
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-right: .5em;
+  font-size: 1.05em;
+
+  border-radius: 10px;
+  background-color: rgba(66, 66, 66, 0.6);
+  padding: 10px; 
+  color: #FFFFFF;
+  margin: 0;
+
+  outline-style: solid;
+  outline-color: #EF6D3D;
+  outline-width: 1px;
+}
+
+.grid-games img {
+  border-radius: 5%;
+}
+
+/* Rounded corners for grid*/
 .rcorners1 {
   border-radius: 10px;
   background-color: rgba(66, 66, 66, 0.6);
@@ -211,3 +246,93 @@ textarea, textarea-focus {
   background-color: #FFB89F;
 }
 
+/* Button */
+button, .swal2-confirm {
+  background-color: #EF6D3D;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #FFB89F;
+}
+
+.popup-window {
+  position: fixed;
+  width: 60%;
+  height: 90%;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 5%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  overflow: scroll;
+  color: black;
+  border-radius: 10px;
+
+  outline-style: solid;
+  outline-color: #EF6D3D;
+  outline-width: 2px;
+}     
+
+.popup-window h1 {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.close-button-top {
+  float: right;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2em;
+}
+
+.close-button-top:hover {
+  float: right;
+  color: #FFB89F;
+  background: none;
+  padding-bottom: 5px;
+}
+
+.close-button {
+  position: relative;
+}
+
+.close-button-bottom {
+  padding: 15px 45px 15px 45px;
+  border-radius: 15px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+iframe {
+  text-align: center;
+}
+
+.game-description {
+  font-size: 1.25em;
+  left: 30%;
+  margin: 30px;
+  border-radius: 0px;
+}
+
+.game-description-header {
+  background-color: #EF6D3D;
+  border-radius: 10px;
+}
+
+.game-description-visuals > img {
+  border:none; 
+  outline-color: #EF6D3D;
+  outline-width: 4px;
+  padding: 10px;
+}

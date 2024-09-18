@@ -20,6 +20,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
@@ -27,7 +28,6 @@
   </head>
   
   <body>
-
     <header id="header">
       <img src="logo.png">
       <h1>Jen Chen</h1>
@@ -44,6 +44,7 @@
       <div class="inner">
         <div id="content"> 
           
+          <!--About Section-->
           <div id="About" class="content-region hide">
             <h2>Hello!</h2>
             <p>
@@ -53,13 +54,109 @@
             </p>
           </div>
           
+          <!--Portfolio Section-->
           <div id="Portfolio" class="content-region hide">
-            <h2>Portfolio</h2>
+            <h2>Games and More</h2>
             <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
+              <div class="grid-games">
+                    
+                <!--Bowling!-->
+                <div class="grid-game"><img src="game_images/bowling2.png" alt="Bowling" style="width:350px;height:197px;">
+                  <b>Bowling!</b><br>Go bowling with this simple yet engaging bowling simulator.
+                  <br><button onclick="showPopupBowling()">Info<i class="uil uil-arrow-right"></i></button></div>
+
+                  <div class="popup-window" id ="popup-window1">
+                    <div class="game-description-header">
+                      <button class="close-button-top close-button" id ="close-button-top1"><i class="uil uil-times"></i></button>
+                      <h1 class="popup-heading">Bowling!</h1> </div>
+                      <div class="game-description">Bowling! is a simple yet engaging bowling simulator. Clean and responsive, it brings a satisfaction when knocking the pins over and 
+                        is faced-paced enough to always want to start another game.</div>
+                      <p align="center"><img src="game_images/bowling2-2.png" alt="Bowling" style="width:750px;height:423px;"></p>
+                      <div class="game-description">
+                        <p><b>Role:</b> Solo developer<br>
+                          <b>Developed:</b> May 2024-June 2024<br>
+                          <b>Tools:</b> Unity3D<br></p>
+                        <p><b>Features:</b>
+                          <ul>
+                            <li>Demonstrates many aspects of the Unity3D engine.</li>
+                            <li>Responsive input system to adjust the ball's direction and throw it.</li>
+                            <li>Accurate detection for fallen pins, including for strikes and spares.</li>
+                            <li>Clean UI to reflect the current and final scores, following the standard bowling scoring system.</li>
+                          </ul> </p>
+                      </div>
+                      <div align="center" class="game-description-visuals"><img src="game_images/bowling1-3.png" alt="Bowling-1" style="width:500px;height:282px;">
+                        <img src="game_images/bowling3-3.png" alt="Bowling-3" style="width:500px;height:281px;">
+                        <img src="game_images/bowling4-3.png" alt="Bowling-4" style="width:500px;height:281px;">
+                        <img src="game_images/bowling5.png" alt="Bowling-5" style="width:500px;height:282px;"></div>
+                    <button class="close-button close-button-bottom" id ="close-button-bottom1">Close</button>
+                  </div>
+                
+                <!--SC:VC-->
+                <div class="grid-game"><img src="game_images/virtualcampus1.png" alt="Virtual Campus" style="width:350px;height:197px;">
+                  <b>Smart Campus: Virtual Campus</b><br>A university project creating an interactive map navigation system for the campus.
+                  <br><button onclick="showPopupVC()">Info<i class="uil uil-arrow-right"></i></button></div>
+
+                  <div class="popup-window" id ="popup-window2">
+                    <div class="game-description-header">
+                      <button class="close-button-top close-button" id ="close-button-top2"><i class="uil uil-times"></i></button>
+                      <h1 class="popup-heading">Smart Campus: Virtual Campus</h1> </div>
+                    <div class="game-description">The Smart Campus: Virtual Campus project is to create an interactive map and navigational system for the university campus, featuring a faitful and accurate 
+                      recreation to scale. It aims to reduce the confusion students and other visitors may have when traversing the campus for the first few times. </div>
+                    <p align="center"><iframe width="750" height="422" src="https://www.youtube.com/embed/_kh6lkKpebk"></iframe></p>
+                    <div class="game-description">
+                      <p><b>Role:</b> Programmer, Modeller<br>
+                        <b>Developed:</b> May 2023-December 2023<br>
+                        <b>Tools:</b> Unity3D, Autodesk Maya, Git<br></p>
+                      <p><b>Features:</b>
+                        <ul>
+                          <li>Utilizes the Unity AI Navigation system to path the shortest route possible among the main campus paths.</li>
+                          <li>There are two options for campus navigation: to instantly traverse to any building of the main campus, and to set 
+                          an auto navigation path from the current point to a selected building. This can be selected in the menu.</li>
+                          <li>Manual navigation is possible for a slower change of pace.</li>
+                        </ul> </p>
+                      <p><b>Role Overview: </b>I modelled around half of the buildings using Autodesk Maya. I also did all the Unity programming, covering all the mentioned features.</p>
+                    </div>
+                    <button class="close-button close-button-bottom" id ="close-button-bottom2">Close</button>
+                  </div>
+
+                <!--Jump Guy-->
+                <div class="grid-game"><img src="game_images/jumpguy2.png" alt="Jump Guy" style="width:350px;height:197px;">
+                  <b>Jump Guy</b><br>A colourful take on the Google Chrome dinosaur game.
+                  <br><button onclick="showPopupJumpGuy()">Info<i class="uil uil-arrow-right"></i></button></div>
+
+                  <div class="popup-window" id ="popup-window3">
+                    <div class="game-description-header"><button class="close-button-top close-button" id ="close-button-top3"><i class="uil uil-times"></i></button>
+                      <h1 class="popup-heading">Jump Guy</h1></div>
+                    <div class="game-description">Jump Guy, an infinite 2D side-scroller/platformer, is a colourful take on the Google Chrome dinosaur game. 
+                      It tests how long you can last using not only time, but score. With the ever-increasing speed and the possibility scarcity of points, 
+                      this simple game can provide widely different results every time.</div>
+                    <p align="center"><img src="game_images/jumpguy2-2.png" alt="Jump Guy" style="width:750px;height:421px;"></p>
+                    <div class="game-description">
+                      <p><b>Role:</b> Solo developer<br>
+                        <b>Developed:</b> May 2024-July 2024<br>
+                        <b>Tools:</b> Unity3D<br></p>
+                      <p><b>Features:</b>
+                        <ul>
+                          <li>Randomized generation of objects, from a pool of enemies, collectables, and obstacles.</li>
+                          <li>Infinite gameplay potential with ever-increasing player speed.</li>
+                          <li>Player has 3 lives, ending the game when all are depleted.</li>
+                          <li>Clean UI to track player lives, score, and time.</li>
+                          <li>Object cleanup system for offscreen objects.</li>
+                          <li>Player and menu animations.</li>
+                        </ul> </p>
+                      </div>
+                      <div align="center" class="game-description-visuals">
+                        <img src="game_images/jumpguy1-2.png" alt="Jump Guy-2" style="width:500px;height:282px;">
+                        <img src="game_images/jumpguy3-2.png" alt="Jump Guy-3" style="width:500px;height:282px;">
+                        <img src="game_images/jumpguy4-2.png" alt="Jump Guy-4" style="width:500px;height:281px;"></div>
+                    <button class="close-button close-button-bottom" id ="close-button-bottom3">Close</button>
+                </div>
+                  
+              </div> 
             </p>
           </div>
           
+          <!--Contact Section-->
           <div id="Contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
@@ -82,14 +179,15 @@
                     <div><p class="rcorners1">Name:<br><input type="text" id="fname" name="Name"/></p></div>
                     <div><p class="rcorners1">Email:<br><input type="text" id="email" name="Email"/></p></div>
                     <div><p class="rcorners1">Message:<br><textarea name="Message" id="message" cols="50"></textarea></p></div>
-                    <div>
-                      <br><input type="submit" value="Send" class="rcorners2"/>
-                    </div>
+                    <div><br><input type="submit" value="Send" class="rcorners2"/></div>
                   </div>
                 </form>
-          </div>
+              </div>
+
+            </div>
 
           </div>
+          
         </div>
       </div>
     </div>
@@ -103,6 +201,7 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script2.js"></script>
     
   </body>
 </html>
