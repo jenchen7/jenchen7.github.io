@@ -79,3 +79,18 @@ function showPopupSpiritwood() {
     popupWindow.style.display = "none";
   });
 }
+
+function showPopupArc() {
+  var popupWindow = document.getElementById("popup-window5");
+  var closeButtonTop = document.getElementById("close-button-top5");
+  var closeButtonBottom = document.getElementById("close-button-bottom5");
+
+  popupWindow.style.display = "block";
+
+  closeButtonTop.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+  closeButtonBottom.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+}
