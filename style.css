@@ -183,12 +183,12 @@ textarea, textarea-focus {
 }
 
 /**
-Grid
+Grid 
 */
 .grid { 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid > div {
@@ -196,7 +196,7 @@ Grid
 }
 
 .grid-games {
-  display: flex;
+  display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: .7em;

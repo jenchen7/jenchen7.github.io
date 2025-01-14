@@ -64,3 +64,18 @@ function showPopupJumpGuy() {
     popupWindow.style.display = "none";
   });
 }
+
+function showPopupSpiritwood() {
+  var popupWindow = document.getElementById("popup-window4");
+  var closeButtonTop = document.getElementById("close-button-top4");
+  var closeButtonBottom = document.getElementById("close-button-bottom4");
+
+  popupWindow.style.display = "block";
+
+  closeButtonTop.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+  closeButtonBottom.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+}
