@@ -191,7 +191,18 @@ Grid
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid2 { 
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+
 .grid > div {
+  padding-right: 10em;
+}
+
+.grid2 > div {
   padding-right: 10em;
 }
 
