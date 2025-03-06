@@ -94,3 +94,18 @@ function showPopupArc() {
     popupWindow.style.display = "none";
   });
 }
+
+function showPopupShip() {
+  var popupWindow = document.getElementById("popup-window6");
+  var closeButtonTop = document.getElementById("close-button-top6");
+  var closeButtonBottom = document.getElementById("close-button-bottom6");
+
+  popupWindow.style.display = "block";
+
+  closeButtonTop.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+  closeButtonBottom.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+}
